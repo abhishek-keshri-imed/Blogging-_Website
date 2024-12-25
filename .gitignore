@@ -34,3 +34,17 @@
 .vs/
 *.vsidx
 
+
+# Exclude BloggingMVC-specific files and folders
+BloggingMVC/bin/
+BloggingMVC/obj/
+BloggingMVC/Properties/launchSettings.json
+
+# Ignore static library files in BloggingMVC/wwwroot (if using build tools)
+BloggingMVC/wwwroot/lib/
+
+# Ignore lock files (optional, unless you want to track package versions explicitly)
+BloggingMVC/wwwroot/node_modules/
+
+# Ignore NuGet packages folder (use this if NuGet dependencies are managed locally)
+BloggingMVC/packages/
