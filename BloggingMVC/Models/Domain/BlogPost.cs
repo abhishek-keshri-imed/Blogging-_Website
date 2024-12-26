@@ -1,4 +1,7 @@
-﻿namespace BloggingMVC.Models.Domain
+﻿
+// Model for BlogPost DB
+
+namespace BloggingMVC.Models.Domain
 {
     public class BlogPost
     {

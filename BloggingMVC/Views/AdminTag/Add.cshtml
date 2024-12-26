@@ -1,10 +1,25 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model BloggingMVC.Models.ViewModels.AddTagRequest
+
 @{
+    ViewData["Title"] = "Add New Tag";
 }
 
 
-<div>
-    <h1> Add Tag</h1>
+<div class="admin-heading">
+    <h1><span>Add New Tag</span> - Admin Functionality</h1>
 </div>
+
+<!-- Add Tag form -->
+<form method="post">
+    <div class="form-group mb-3">
+        <label for="formGroupExampleInput">Name</label>
+        <input type="text" class="form-control mt-2" id="name" placeholder="Enter Tag Name" asp-for="name">
+    </div>
+    <div class="form-group mb-3">
+        <label for="formGroupExampleInput2">Display Name</label>
+        <input type="text" class="form-control mt-2" id="displayName" placeholder="Enter tag display name" asp-for="displayName">
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-dark">Add Tag</button>
+    </div>
+</form>

@@ -1,7 +1,11 @@
-﻿namespace BloggingMVC.Models.Domain
+﻿
+// Model for Tag DB
+
+namespace BloggingMVC.Models.Domain
 {
     public class Tag
     {
+        // Guid datatype auto increment uniqe value
         public Guid Id { get; set; }
 
         public String Name { get; set; }
